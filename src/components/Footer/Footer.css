@@ -1,0 +1,13 @@
+.footer .footer-item{
+    width: 1600px;
+    height:40px;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.copyright{
+    color:hsl(206deg 66% 33%);
+    font-weight: 600
+}
