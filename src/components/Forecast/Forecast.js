@@ -10,7 +10,10 @@ const Forecast = ({ data }) => {
     
     return (
         <>
-            <label className='title'>7 DAY FORECAST</label>
+        <div className='header'> 
+        <img className='calendar-icon' alt='calendar-img' src='https://iconarchive.com/download/i75812/martz90/circle/calendar.ico'></img>
+        <label className='title'>7 DAY FORECAST</label>
+        </div>
             <Accordion allowZeroExpanded>
                 {data.list.splice(0, 7).map((item, index) => (
                     <AccordionItem key={index}>
