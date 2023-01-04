@@ -21,6 +21,10 @@
     margin: 0px;
 }
 .weather-description{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
@@ -53,4 +57,36 @@
     font-weight: 600;
     text-align: right;
     font-size: 12px
+}
+
+@media screen and (max-width: 600px){
+    .weather{
+        width: auto;
+        border-radius: 3px;
+        margin: 10px 100px 0 100px;
+        padding: 0px 10px 10px 10px;
+    }
+    .city{
+        font-size: 10px;
+        line-height: 1;
+        letter-spacing: 1px;
+        margin: 0px;
+    }
+    .weather-description{
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1;
+        margin: 0px;
+    }
+    .temperature{
+        font-weight: 600;
+        font-size: 20px;
+        width: auto;
+        letter-spacing: -2px;
+        margin: 5px 0px;
+    }
+    .details{
+        padding-left: 10px;
+    }
+  
 }

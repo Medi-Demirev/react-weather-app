@@ -5,10 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
-
 }
 .daily-item{
     background-color: hsl(206deg 66% 33%);
@@ -57,7 +56,6 @@
     border-radius: 15px;
     padding-top: 30px;
     margin-top: 10px;
-    
 }
 .daily-details-grid-item{
     display: flex;
@@ -73,19 +71,77 @@
 }
 .accordion{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
-    width: 1600px;
-   
+    justify-items: center;
+    width: auto;
 }
+.accordion__item:last-child{
+    justify-self: center;
+    grid-column-start: span 3;
+}
+
 .header{
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-left: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px
+  
 }
 .calendar-icon{
   height: 30px;
   margin-top: 13px;
-  margin-left: 160px;
+  margin: 0px;
+  
+}
+@media screen and (max-width: 600px){
+    .title{
+        font-weight:700;
+        font-size: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin:  0px;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px
+    }
+    .calendar-icon{
+        margin-top: 25px;
+        margin: 0px;
+      
+      }
+    .accordion{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 10px 10px
+    }
+    .accordion__item:last-child{
+        justify-self: center;
+        grid-column-start: span 1;
+    }
+    .daily-details-grid{
+        grid-column-gap: 7px;
+        column-gap: 7px;
+        width: 165px;
+        height: 200px;
+        padding: 5px 15px;
+        padding-top: 30px;
+        margin-top: 10px;
+        
+    }
+    .daily-item{
+        margin: 3px;
+        height: 200px;
+        width: auto;
+        font-size: 14px;
+        padding: 3px 10px;
+        cursor: pointer;
+    }  
 }
